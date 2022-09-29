@@ -11,7 +11,9 @@ import SwiftUI
 struct ChainBeaconApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                PulseListView(pulses: BeaconRun.sampleData)
+            }
         }
     }
 }
