@@ -13,7 +13,7 @@ struct CardResultView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("CDN: \(result.endpoint.name)")
+            Text("CDN: \(result.endpoint)")
                 .font(.headline)
                 .accessibilityAddTraits(.isHeader)
             Spacer()
