@@ -1,58 +1,71 @@
 //
-//  CardResultView.swift
+//  ResultDetailView.swift
 //  ChainBeacon
 //
-//  Created by Lepage Tony on 2022/9/29.
+//  Created by Lepage Tony on 2022/9/30.
 //
-
 
 import SwiftUI
 
-struct CardResultView: View {
+struct ResultDetailView: View {
     let result: Result
     
     var body: some View {
+        
         VStack(alignment: .leading) {
-            Text("\(result.endpoint)")
+            Text("CDN: \(result.endpoint)")
                 .font(.headline)
                 .accessibilityAddTraits(.isHeader)
-            Spacer()
             HStack {
-                Label("RTT:", systemImage: "clock.arrow.circlepath")
+                Label("Tested on \(result.runAt.formatted(date: .abbreviated, time: .shortened))", systemImage: "calendar.badge.clock")
+                    .accessibilityLabel("tested on (result.runAt)")
+            }
+            .padding(2)
+            HStack {
+                Label("Round-Trip-Time (RTT):", systemImage: "clock.arrow.circlepath")
                     .accessibilityLabel("round trip time")
                 Spacer()
                 Label(" \(NSString(format: "%.3f", result.rtt)) s", systemImage: "hourglass")
-                    .accessibilityLabel("The round trip time was \(NSString(format: "%.3f", result.rtt)) in seconds")
+                    .accessibilityLabel("The round trip time was \(result.rtt) in seconds")
                     .labelStyle(.trailingIcon)
             }
-            Spacer()
+            .padding(2)
             HStack {
-                Label("TTFB:", systemImage: "clock.badge.checkmark")
+                Label("Time-to-First-Byte (TTFB):", systemImage: "clock.badge.checkmark")
                     .accessibilityLabel("time to first byte")
                 Spacer()
                 Label(" \(NSString(format: "%.3f", result.rtt)) s", systemImage: "hourglass")
                     .accessibilityLabel("The time to first byte was \(result.ttfb) in seconds")
                     .labelStyle(.trailingIcon)
             }
-            Spacer()
+            .padding(2)
             HStack {
-                Label("Traceroute", systemImage: "directcurrent")
+                Label("Traceroute details", systemImage: "directcurrent")
                     .accessibilityLabel("time to first byte")
                 Spacer()
                 Label(" \(result.traceroute.count) hops", systemImage: "network")
                     .accessibilityLabel("The time to first byte was \(result.ttfb) in seconds")
                     .labelStyle(.trailingIcon)
             }
+            .padding(2)
+            HStack {
+                Label("Endpoint: \(result.url)", systemImage: "link.icloud")
+                    .accessibilityLabel("\(result.url) URL tested")
+            }
+            Spacer()
         }
+        .navigationTitle("Single CDN Results")
         .font(.caption)
         .padding()
     }
+    
 }
 
-struct CardResultView_Previews: PreviewProvider {
-    static var result = BeaconRun.sampleData[0].results[0]
+struct ResultDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        CardResultView(result: result)
-            .previewLayout(.fixed(width: 400, height: 60))
+        NavigationView {
+            ResultDetailView(result: Result.sampleData[0])
+        }
     }
 }
+

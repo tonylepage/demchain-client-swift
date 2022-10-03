@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA6E37E528E5A4FB0084E518 /* PulseEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E37E428E5A4FB0084E518 /* PulseEditView.swift */; };
+		EA6E37E728E6A3830084E518 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E37E628E6A3820084E518 /* DateHelper.swift */; };
+		EA6E37E928E6BF910084E518 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E37E828E6BF910084E518 /* Result.swift */; };
+		EA6E37EB28E6C2360084E518 /* ResultDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E37EA28E6C2360084E518 /* ResultDetailView.swift */; };
 		EADBF04128E40EE9003865A7 /* ChainBeaconApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBF04028E40EE9003865A7 /* ChainBeaconApp.swift */; };
 		EADBF04328E40EE9003865A7 /* MonitoringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBF04228E40EE9003865A7 /* MonitoringView.swift */; };
 		EADBF04528E40EEA003865A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EADBF04428E40EEA003865A7 /* Assets.xcassets */; };
@@ -16,7 +20,7 @@
 		EADBF05E28E40EEA003865A7 /* ChainBeaconUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBF05D28E40EEA003865A7 /* ChainBeaconUITestsLaunchTests.swift */; };
 		EADBF06C28E427B3003865A7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBF06B28E427B3003865A7 /* Theme.swift */; };
 		EADBF06E28E428CC003865A7 /* BeaconRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBF06D28E428CC003865A7 /* BeaconRun.swift */; };
-		EADBF07028E43EA9003865A7 /* CardPulseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBF06F28E43EA8003865A7 /* CardPulseView.swift */; };
+		EADBF07028E43EA9003865A7 /* CardPulseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBF06F28E43EA8003865A7 /* CardPulseListView.swift */; };
 		EADBF07228E549AB003865A7 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBF07128E549AB003865A7 /* TrailingIconLabelStyle.swift */; };
 		EADBF07428E54DA3003865A7 /* PulseListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBF07328E54DA3003865A7 /* PulseListView.swift */; };
 		EADBF07628E56923003865A7 /* PulseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADBF07528E56923003865A7 /* PulseDetailView.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA6E37E428E5A4FB0084E518 /* PulseEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseEditView.swift; sourceTree = "<group>"; };
+		EA6E37E628E6A3820084E518 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		EA6E37E828E6BF910084E518 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		EA6E37EA28E6C2360084E518 /* ResultDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailView.swift; sourceTree = "<group>"; };
 		EADBF03D28E40EE9003865A7 /* ChainBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChainBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADBF04028E40EE9003865A7 /* ChainBeaconApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainBeaconApp.swift; sourceTree = "<group>"; };
 		EADBF04228E40EE9003865A7 /* MonitoringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitoringView.swift; sourceTree = "<group>"; };
@@ -53,7 +61,7 @@
 		EADBF05D28E40EEA003865A7 /* ChainBeaconUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainBeaconUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EADBF06B28E427B3003865A7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		EADBF06D28E428CC003865A7 /* BeaconRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconRun.swift; sourceTree = "<group>"; };
-		EADBF06F28E43EA8003865A7 /* CardPulseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPulseView.swift; sourceTree = "<group>"; };
+		EADBF06F28E43EA8003865A7 /* CardPulseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPulseListView.swift; sourceTree = "<group>"; };
 		EADBF07128E549AB003865A7 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		EADBF07328E54DA3003865A7 /* PulseListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseListView.swift; sourceTree = "<group>"; };
 		EADBF07528E56923003865A7 /* PulseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseDetailView.swift; sourceTree = "<group>"; };
@@ -111,11 +119,14 @@
 			children = (
 				EADBF04028E40EE9003865A7 /* ChainBeaconApp.swift */,
 				EADBF04228E40EE9003865A7 /* MonitoringView.swift */,
-				EADBF06F28E43EA8003865A7 /* CardPulseView.swift */,
+				EADBF06F28E43EA8003865A7 /* CardPulseListView.swift */,
 				EADBF07928E57575003865A7 /* CardResultView.swift */,
+				EA6E37E628E6A3820084E518 /* DateHelper.swift */,
 				EADBF07128E549AB003865A7 /* TrailingIconLabelStyle.swift */,
 				EADBF07328E54DA3003865A7 /* PulseListView.swift */,
 				EADBF07528E56923003865A7 /* PulseDetailView.swift */,
+				EA6E37E428E5A4FB0084E518 /* PulseEditView.swift */,
+				EA6E37EA28E6C2360084E518 /* ResultDetailView.swift */,
 				EADBF04428E40EEA003865A7 /* Assets.xcassets */,
 				EADBF04628E40EEA003865A7 /* Preview Content */,
 			);
@@ -152,6 +163,7 @@
 			children = (
 				EADBF06B28E427B3003865A7 /* Theme.swift */,
 				EADBF06D28E428CC003865A7 /* BeaconRun.swift */,
+				EA6E37E828E6BF910084E518 /* Result.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,14 +298,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6E37E528E5A4FB0084E518 /* PulseEditView.swift in Sources */,
 				EADBF07428E54DA3003865A7 /* PulseListView.swift in Sources */,
 				EADBF07628E56923003865A7 /* PulseDetailView.swift in Sources */,
 				EADBF07A28E57575003865A7 /* CardResultView.swift in Sources */,
 				EADBF06C28E427B3003865A7 /* Theme.swift in Sources */,
 				EADBF07228E549AB003865A7 /* TrailingIconLabelStyle.swift in Sources */,
-				EADBF07028E43EA9003865A7 /* CardPulseView.swift in Sources */,
+				EA6E37E928E6BF910084E518 /* Result.swift in Sources */,
+				EADBF07028E43EA9003865A7 /* CardPulseListView.swift in Sources */,
 				EADBF04328E40EE9003865A7 /* MonitoringView.swift in Sources */,
+				EA6E37EB28E6C2360084E518 /* ResultDetailView.swift in Sources */,
 				EADBF04128E40EE9003865A7 /* ChainBeaconApp.swift in Sources */,
+				EA6E37E728E6A3830084E518 /* DateHelper.swift in Sources */,
 				EADBF06E28E428CC003865A7 /* BeaconRun.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

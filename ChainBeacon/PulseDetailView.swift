@@ -6,18 +6,21 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct PulseDetailView: View {
     let pulse: BeaconRun
-    
+
     var body: some View {
+
+        
         VStack {
             List {
                 Section(header: Text("Test Details")){
                     HStack {
                         Label("Test Date", systemImage: "calendar.badge.clock")
                         Spacer()
-                        Text("\(pulse.testDateString)")
+                        Text("\(pulse.testDate.formatted(date: .abbreviated, time: .shortened))")
                     }
                     HStack {
                         Label("Total Runtime", systemImage: "clock.badge.checkmark.fill")
@@ -33,7 +36,7 @@ struct PulseDetailView: View {
                 }
 
                 ForEach(pulse.results) { result in
-                    NavigationLink(destination: Text("\(result.rtt)")) {
+                    NavigationLink(destination: ResultDetailView(result: result)) {
                         CardResultView(result: result)
                     }
                     .listRowBackground(pulse.theme.mainColor)
@@ -44,7 +47,7 @@ struct PulseDetailView: View {
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
+struct PulseDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
             PulseDetailView(pulse: BeaconRun.sampleData[0])
